@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>QRCoder</title>
+    <script src="qrcode.js"></script>
+  </head>
+
+  <body>
+    <input id="first" type="text" style="width:80%" /><br />
+    <input id="second" type="text" style="width:80%" /><br />
+    <button onclick="makeCode()">Gerar</button>
+    <div id="qrcode"></div>
+  </body>
+
+  <script type="text/javascript">
+    //new QRCode(document.getElementById("qrcode"), "sander");
+
+    var qrcode = new QRCode("qrcode");
+    function makeCode () {    
+      var firstInput = document.getElementById('first')
+      var secondInput = document.getElementById('second')
+      var all = firstInput.value + secondInput.value
+
+      /*
+      if (!elText.value) {
+        alert("Input a text");
+        elText.focus();
+        return;
+      }
+      */
+      qrcode.makeCode(all);
+    }
+  </script>
+</html>
