@@ -5,7 +5,9 @@
 ## :computer: Web
 
 <h1 align="center">
-    <img alt="Web" src=".github/web.png" width="650px">
+    <img alt="Web" src=".github/web-01.png" width="650px">
+    <br><br>
+    <img alt="Web" src=".github/web-02.png" width="650px">
 </h1>
 
 ## :bookmark: About
