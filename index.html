@@ -58,40 +58,41 @@
             <br />
 
             <input 
+                type="date"
+                required
                 class="form__input--primary" 
                 id="fourth"
                 name="date" 
-                type="date"
-                required
+                value="2020-01-01"
+                placeholder=" "
             />
             <br />
+            <div class="form__checkbox">
+              <input 
+                type="checkbox" 
+                id="checkbox" 
+                name="checkbox" 
+                value="true">
+              <label for="checkbox"> I agree to the Terms and Privacy Policy</label><br>
+            </div>
+
+            <div class="form__button">
+              <button 
+                class="form__button--primary" 
+                id="myBtn"
+                href="" 
+                onclick="generate()">
+                Sign Up
+            </button>
+              <button 
+                class="form__button--secondary" 
+                disabled >
+                Sign In
+              </button>
+            </div>
+          </div>
           </form>
         </div>
-          <div class="form__checkbox">
-            <input 
-              type="checkbox" 
-              id="checkbox" 
-              name="checkbox" 
-              value="true">
-            <label for="checkbox"> I agree to the Terms and Privacy Policy</label><br>
-          </div>
-          <div id="result"></div>
-          <div class="form__button">
-            <button 
-              class="form__button--primary" 
-              id="myBtn"
-              href="" 
-              onclick="generate()">
-              Sign Up
-          </button>
-            <button 
-              class="form__button--secondary" 
-              disabled >
-              Sign In
-            </button>
-          </div>
-        </div>
-
       <div class="background">
         <img src="src/public/background.png">
       </div>

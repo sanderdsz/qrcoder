@@ -63,19 +63,19 @@ if(sPath == "/src/pages/success.html") {
     }
     return ""
   }
+  // Adiciona os cookies nos campos da tela de recibo 
+  let receiptName = getCookie("name");
+  document.getElementById("receiptName").append(`${receiptName}`)
+  let receiptEmail = getCookie("email");
+  document.getElementById("receiptEmail").append(`${receiptEmail}`)
+  let receiptEvent = getCookie("event");
+  document.getElementById("receiptEvent").append(`${receiptEvent}`)
+  let receiptDate = getCookie("date");
+  document.getElementById("receiptDate").append(`${receiptDate}`)
+
+  // Função de retorno da tela do recibo
+  function returnPage() {
+    window.location.href="/";
+  }
 }
 
-// Adiciona os cookies nos campos da tela de recibo 
-let receiptName = getCookie("name");
-document.getElementById("receiptName").append(`${receiptName}`)
-let receiptEmail = getCookie("email");
-document.getElementById("receiptEmail").append(`${receiptEmail}`)
-let receiptEvent = getCookie("event");
-document.getElementById("receiptEvent").append(`${receiptEvent}`)
-let receiptDate = getCookie("date");
-document.getElementById("receiptDate").append(`${receiptDate}`)
-
-// Função de retorno da tela do recibo
-function returnPage() {
-  window.location.href="/";
-}
