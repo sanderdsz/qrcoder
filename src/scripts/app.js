@@ -44,14 +44,13 @@ if(sPath == "/src/pages/success.html") {
   // Adiciona o objeto img na id result do html 
   document.getElementById("result").appendChild(img);
 
+  // Adiciona o objeto receiptNumber na página como numeral random 
   let receiptNumber = Math.floor(Math.random() * 10000)
   document.getElementById("receiptNumber").append(`#${receiptNumber}`)
 
+  // Lógica que captura os cookies dentro do array e retorna baseado no name 
   const decodedCookie = decodeURIComponent(document.cookie);
-  console.log(decodedCookie);
   const splitedCookie = decodedCookie.split(';')
-  console.log(splitedCookie);
-
   function getCookie(cookieName) {
     let name = cookieName + "="
     for(var i = 0; i < splitedCookie.length; i++) {
@@ -66,6 +65,7 @@ if(sPath == "/src/pages/success.html") {
   }
 }
 
+// Adiciona os cookies nos campos da tela de recibo 
 let receiptName = getCookie("name");
 document.getElementById("receiptName").append(`${receiptName}`)
 let receiptEmail = getCookie("email");
@@ -75,6 +75,7 @@ document.getElementById("receiptEvent").append(`${receiptEvent}`)
 let receiptDate = getCookie("date");
 document.getElementById("receiptDate").append(`${receiptDate}`)
 
+// Função de retorno da tela do recibo
 function returnPage() {
   window.location.href="/";
 }
