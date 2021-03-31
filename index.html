@@ -12,15 +12,99 @@
   <body>
     <div class="container">
       <div class="form">
-        <input id="first" type="text" /><br />
-        <input id="second" type="text" /><br />
-        <button id="myBtn" onclick="generate()">Gerar QRcode</button>
+        <header>
+          Create Booking
+        </header>
+        <div class="form__social">
+          <img style="width: 40px; height: 40px" src="https://img.icons8.com/ios/50/000000/twitter-circled--v1.png"/>
+          <img style="width: 40px; height: 40px" src="https://img.icons8.com/ios/50/000000/google-plus-circled.png"/>
+          <img style="width: 40px; height: 40px" src="https://img.icons8.com/ios/50/000000/facebook-circled--v1.png"/>
+        </div>
+        <p>
+          or use your e-mail for registration:
+        </p>
+
+        <div class="form__wrapper">
+          <form action="./src/pages/success.html" method="GET">
+            <input 
+              class="form__input--primary" 
+              id="first"
+              name="name" 
+              type="text"
+              placeholder="Name"
+              required
+            />
+            <br />
+
+            <input 
+              class="form__input--primary"
+              id="second"
+              name="email" 
+              type="text"
+              placeholder="Email"
+              required 
+            />
+            <br />
+            <select 
+              class="form__input--primary"  
+              id="third" 
+              name="event" 
+              placeholder="events">
+              <option value="Lorem">Lorem</option>
+              <option value="Ipsum">Ipsum</option>
+              <option value="Foo">Foo</option>
+              <option value="Bar">Bar</option>
+            </select>
+            <br />
+
+            <input 
+                class="form__input--primary" 
+                id="fourth"
+                name="date" 
+                type="date"
+                required
+            />
+            <br />
+          </form>
+        </div>
+        
+          <!--<p id="demo"></p>-->
+
+          <div class="form__checkbox">
+            <input 
+              type="checkbox" 
+              id="checkbox" 
+              name="checkbox" 
+              value="true">
+            <label for="checkbox"> I agree to the Terms and Privacy Policy</label><br>
+          </div>
+          <div id="result"></div>
+          <div class="form__button">
+            <button 
+              class="form__button--primary" 
+              id="myBtn"
+              href="" 
+              onclick="generate()">
+              Sign Up
+          </button>
+            <button 
+              class="form__button--secondary" 
+              disabled >
+              Sign In
+            </button>
+          </div>
+        </div>
+
+      <div class="background">
+        <img src="src/public/background.png">
       </div>
       <!--<button onclick="makeCode()">Gerar</button>-->
       <!--<div id="qrcode"></div>-->
+      <!--
       <div class="qrcode">
         <div id="result"></div>
       </div>
+      -->
     </div>
   </body>
 

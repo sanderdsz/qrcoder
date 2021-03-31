@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>QRCoder</title>
+    <script src="../scripts/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <header>
+          Booking Receipt
+        </header>
+        <div class="receipt">
+          <div class="receipt__wrapper">
+            <h3 class="receipt__body--secondary">Order summary:</h3>
+            <div class="receipt__header">
+              <h1 class="receipt__header--primary">
+                Receipt
+              </h1>
+              <div 
+                class="receipt__header--secondary" 
+                id="receiptNumber">
+              </div>
+            </div>
+            <div class="receipt__body">
+              <h3 class="receipt__body--secondary">Name:</h3>
+              <div id="receiptName"></div>
+              <hr class="divider--rounded">
+              <h3 class="receipt__body--secondary">Email:</h3>
+              <div id="receiptEmail"></div>
+              <hr class="divider--rounded">
+              <h3 class="receipt__body--secondary">Event:</h3>
+              <div id="receiptEvent"></div>
+              <hr class="divider--rounded">
+              <h3 class="receipt__body--secondary">Date:</h3>
+              <div id="receiptDate"></div>
+              <hr class="divider--rounded">
+            </div>
+          </div>
+          <div id="result"></div>
+        </div>
+
+        <div class="form__button">
+          <button 
+            class="form__button--primary" 
+            id="myBtn"
+            href="" 
+            onclick="returnPage()">
+            Return
+        </button>
+          <button 
+            class="form__button--secondary" 
+            disabled >
+            Download Receipt
+          </button>
+        </div>
+      </div> 
+      <div class="background">
+        <img src="../public/background.png">
+      </div>
+    </div>
+  </body>
+</html>

@@ -8,14 +8,236 @@
 }
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  background-color: #2E3440;
-}
-
- .container {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: 'Open Sans', sans-serif;
+  
+  background-color: #ECEFF4;
 }
+
+ .container {
+  height: 45rem;
+  width: 65rem;
+
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  background: #ffffff;
+  box-shadow: rgb(0,0,0, 25%) 1px 4px 6px;
+}
+
+.background > img{
+  height: 45rem;
+  border-radius: 5px;
+}
+
+.form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form > header {
+  padding: 5rem 0 1.25rem 0; 
+  
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  color: #FF5252;
+}
+
+.form__social {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 1.25rem 0 1.25rem 0;
+}
+
+.form > p {
+  padding: 1.25rem 0 1.25rem 0;
+
+  text-align: center;
+}
+
+.form__wrapper {
+  display: block;
+  text-align: center;
+}
+
+.form__wrapper form > input, select {
+  padding: .5rem;
+  margin: .5rem 0 .5rem 0;
+
+  background: #ECEFF4;
+  border: 2px solid #CBD3E2;
+  border-radius: 5px;
+
+  transition: all 0.5s ease;
+}
+
+.form__wrapper input {
+  width: 25rem;
+}
+
+.form__wrapper select {
+  width: 26.25rem;
+}
+
+.form__checkbox {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.form__checkbox > input {
+  margin-right: .5rem;
+}
+
+.form__button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__wrapper form > input:last-child {
+  padding: 1rem 4em;
+
+  background: #FF5252;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.form__button--primary {
+  padding: 1rem 4em;
+
+  background: #FF5252;
+  border-radius: 5px;
+
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.form__button--secondary {
+  padding: 1rem 4em;
+
+  background: #ECEFF4;
+  border-radius: 5px;
+
+  font-weight: bold;
+}
+
+.receipt {
+  display: flex;
+  align-items: center;
+
+  padding: 2rem;
+  margin: 2.5rem 0 2.5rem 0;
+
+  background: #ECEFF4;
+
+  border-radius: 10px;
+}
+
+.receipt__wrapper {
+  padding: 0 2rem 0 0;
+}
+
+.receipt__header {
+  display: flex;
+}
+
+.receipt__header--primary {
+  padding: 0 1rem 1rem 0;
+  
+  font-size: 1.5rem;
+  color: #FF5252;
+}
+
+.receipt__header--secondary {
+  font-size: 1.5rem;
+}
+
+.receipt__body--secondary {
+  font-size: .80rem;
+  color: #4C566A;
+}
+
+.receipt__body--secondary:not(:first-child) {
+  padding: .5rem 0 0 0;
+}
+
+.divider--rounded {
+  margin: .5rem 0 0 0;
+
+  border-top: 2px solid #D8DEE9;
+  border-radius: 5px;
+}
+/*
+
+
+
+.receipt__header > p:first-child {
+}
+
+.receipt__body {
+  margin: 2rem 0 0 0;
+  font-size: 1.25rem;
+}
+*/
+
+/*
+.form__input--primary {
+  padding: .5rem;
+  width: 15rem;
+
+  background: #ECEFF4;
+  border: 2px solid #CBD3E2;
+  border-radius: 5px; 
+  transition: all 0.5s ease;
+}
+
+.form__wrapper {
+  display: block;
+  text-align: center;
+}
+
+.form__input {
+  display: block;
+}
+
+.form__input--primary {
+  margin: .35rem;
+  width: 10rem;
+
+  background: #D8DEE9;
+  border: 2px solid #CBD3E2;
+  border-radius: 5px; 
+  transition: all 0.5s ease;
+}
+
+.form__input--primary:focus {
+  outline: none;
+  border: 2px solid #88C0D0;
+}
+
+.form__input--primary:focus:invalid {
+  outline: none;
+  border: 2px solid #BF616A;
+}
+
+.form__button {
+  padding: .5rem;
+}
+
+.form__button--primary {
+  padding: .25rem .75rem;
+
+  background: #88C0D0;
+  border-radius: 5px;
+}
+*/
