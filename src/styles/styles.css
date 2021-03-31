@@ -89,12 +89,17 @@ html, body {
 }
 
 .form__checkbox {
-  margin: 0.5rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .form__checkbox > input {
   margin-right: .5rem;
 }
+
+.form__checkbox a {
+  color: #FF5252;
+}
+
 
 .form__button {
   display: flex;
